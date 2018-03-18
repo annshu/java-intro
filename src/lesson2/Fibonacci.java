@@ -19,21 +19,21 @@ public class Fibonacci {
 
     }
 
-    public static void printFibonacciNumbers(int N){
-        System.out.println("Fibonacci numbers for:"+ N);
-        if (N == 1){
+    public static void printFibonacciNumbers(int count){
+        System.out.println("Fibonacci numbers for:"+ count);
+        if (count == 1){
             System.out.println(0);
         }
-        else if (N == 2){
+        else if (count == 2){
             System.out.println(0);
             System.out.println(1);
         }
-        else if (N > 2){
+        else if (count > 2){
             System.out.println(0);
             System.out.println(1);
             int current = 1;
             int previous = 0;
-            for (int i=0;i < (N-2); i++){
+            for (int i=0;i < (count-2); i++){
                 int temp = current;
                 current = current + previous;
                 previous = temp;
@@ -41,10 +41,9 @@ public class Fibonacci {
             }
         }
         else {
-            System.out.println("Incorrect value " + N);
+            System.out.println("Incorrect value " + count);
         }
 
     }
-
 
 }
