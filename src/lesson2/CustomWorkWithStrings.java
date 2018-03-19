@@ -15,7 +15,7 @@ everyNth("abcdefg", 3) → "adg"
     public static void main(String[] args){
         eachNth("Miracle",2);
         eachNth("abcdefg",2);
-        eachNth("abcdefg", 3);
+        eachNth("abcdefg",3);
 
     }
 
